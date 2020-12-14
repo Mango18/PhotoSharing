@@ -1,0 +1,41 @@
+﻿@model CommentCreateViewModel
+
+<div id="add-comment">
+    @using (Ajax.BeginForm("AddCommentToPhoto", new AjaxOptions
+    {
+        UpdateTargetId = "add-comment",
+        HttpMethod = "POST",
+        OnSuccess = "refreshCommentsForPhoto()"
+    }))
+    {
+        @Html.AntiForgeryToken()
+        <div class="form-horizontal">
+            <h4>Add a new Comment</h4>
+            <hr />
+            @Html.ValidationSummary(true)
+            @Html.HiddenFor(model => model.PhotoID)
+
+            <div class="col-xs-4 form-group">
+                @Html.LabelFor(model => model.Subject, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-4">
+                    @Html.EditorFor(model => model.Subject)
+                    @Html.ValidationMessageFor(model => model.Subject)
+                </div>
+            </div>
+
+            <div class="col-xs-8 form-group">
+                @Html.LabelFor(model => model.Body, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.Body)
+                    @Html.ValidationMessageFor(model => model.Body)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+</div>

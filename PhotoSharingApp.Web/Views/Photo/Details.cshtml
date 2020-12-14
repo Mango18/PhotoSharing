@@ -1,0 +1,33 @@
+﻿@model PhotoDetailsViewModel
+
+
+@{
+    ViewBag.Title = "Display" + Model.Photo.Title;
+}
+@{Html.RenderPartial("_PhotoDetails", Model.Photo); }
+
+
+<div id="add-favorites">
+    @Ajax.ActionLink("Añadir a favoritos", "AddToFavorites", "Photo", new { PhotoID = Model.Photo.PhotoID }, new AjaxOptions
+{
+    UpdateTargetId = "add-favorites"
+})
+</div>
+
+@{Html.RenderPartial("_CommentsForPhoto", Model.Comments); }
+
+@{ Html.RenderAction("AddCommentToPhoto", new { PhotoID = Model.Photo.PhotoID }); }
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+@section Scripts{
+    <script>
+        function refreshCommentsForPhoto() {
+
+            $('#all-comments').load('@Url.Action("CommentsForPhoto", "Photo",
+                      new { PhotoID = Model.Photo.PhotoID })');
+        }
+    </script>
+
+}

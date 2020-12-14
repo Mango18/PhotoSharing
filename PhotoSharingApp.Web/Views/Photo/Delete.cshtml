@@ -1,0 +1,23 @@
+﻿@model PhotoDeleteViewModel
+
+
+@{
+    ViewBag.Title = "Delete Photo: " + Model.Photo.Title;
+}
+
+<h3>Are you sure you want to delete this Photo?</h3>
+@{Html.RenderPartial("_PhotoDetails", Model.Photo); }
+
+<div>
+
+    @using (Html.BeginForm("Delete", "Photo", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" />
+            |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

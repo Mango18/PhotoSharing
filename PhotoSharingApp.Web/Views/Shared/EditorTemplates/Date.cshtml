@@ -1,0 +1,11 @@
+﻿@model DateTime?
+@if (Model.HasValue)
+{
+    @Html.TextBox("", String.Format("{0:dd/mm/yyyy}", Model.Value.ToShortDateString()),
+  new { @class = "datepicker", type = "date", size = "9" })
+}
+else
+{
+    @Html.TextBox("", String.Format("{0:dd/mm/yyyy}", ""),
+  new { @class = "datepicker", type = "date", size = "9" })
+}

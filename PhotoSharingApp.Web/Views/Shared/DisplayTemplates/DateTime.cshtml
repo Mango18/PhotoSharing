@@ -1,0 +1,9 @@
+﻿@model DateTime?
+
+@{
+    IFormatProvider formatProvider = new System.Globalization.CultureInfo("es-ES");
+    if (Model.HasValue)
+    {
+        <text>@Model.Value.ToString("dd/MM/yy # hh:mm", formatProvider)</text>
+    }
+}
