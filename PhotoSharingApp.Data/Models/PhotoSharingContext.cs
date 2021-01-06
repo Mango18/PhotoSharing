@@ -10,7 +10,7 @@ namespace PhotoSharingApp.Data.Models
     public class PhotoSharingContext : DbContext
     {
         public PhotoSharingContext()
-            : base("name=PhotoSharingDB")
+            : base("name=PhotoSTitan")
         {
 
         }
