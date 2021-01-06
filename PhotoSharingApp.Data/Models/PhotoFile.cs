@@ -9,10 +9,10 @@ namespace PhotoSharingApp.Data.Models
     public class PhotoFile
     {
         public int ID { get; set; }
-        //PhotoFile. This is a picture file
+        //arxiu foto
         public byte[] File { get; set; }
 
-        //ImageMimeType, stores the MIME type for the PhotoFile
+        
         public string ImageMimeType { get; set; }
     }
 }

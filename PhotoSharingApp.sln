@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoSharingApp.Data", "Pho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoSharingApp.Web", "PhotoSharingApp.Web\PhotoSharingApp.Web.csproj", "{5716C7EE-6D40-40F3-9071-9AE5450899D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "..\WebApplication1\WebApplication1.csproj", "{2BDD5BD1-1227-4C04-BC71-307ACC7C5BC5}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{5716C7EE-6D40-40F3-9071-9AE5450899D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5716C7EE-6D40-40F3-9071-9AE5450899D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5716C7EE-6D40-40F3-9071-9AE5450899D2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2BDD5BD1-1227-4C04-BC71-307ACC7C5BC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2BDD5BD1-1227-4C04-BC71-307ACC7C5BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2BDD5BD1-1227-4C04-BC71-307ACC7C5BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2BDD5BD1-1227-4C04-BC71-307ACC7C5BC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

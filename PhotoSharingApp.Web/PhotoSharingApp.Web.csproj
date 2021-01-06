@@ -131,6 +131,13 @@
     <Content Include="Images\flower.JPG" />
     <Content Include="Images\fungi.JPG" />
     <Content Include="Images\headland.jpg" />
+    <Content Include="Images1\annie.jpg" />
+    <Content Include="Images1\armin.jpg" />
+    <Content Include="Images1\eren.jpg" />
+    <Content Include="Images1\erwin.jpg" />
+    <Content Include="Images1\hanji.jpg" />
+    <Content Include="Images1\Levy.jpg" />
+    <Content Include="Images1\miKasa.jpg" />
     <Content Include="Images\orchard.JPG" />
     <Content Include="Images\path.JPG" />
     <Content Include="Images\pebbles.jpg" />
