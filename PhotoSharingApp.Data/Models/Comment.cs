@@ -7,22 +7,22 @@ namespace PhotoSharingApp.Data.Models
 {
     public class Comment
     {
-        //CommentID. This is the Primary Key
+        //Primary Key
         public int CommentID { get; set; }
 
-        //PhotoID. This is the ID of the photo that this comment relates to
+        //foto comentario relación
         public int PhotoID { get; set; }
 
-        //UserName. This is the name of the user who made this comment
+        //idUser comentario
         public string UserName { get; set; }
 
-        //Subject.  
+        //Titól comentari 
         public string Subject { get; set; }
 
         //Body
         public string Body { get; set; }
 
-        //Photo. This is the photo that this comment relates to as a navigation property
+        //foto con la que se relaciona propiedad comentario
         public virtual Photo Photo { get; set; }
     }
 }

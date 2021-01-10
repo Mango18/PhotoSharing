@@ -8,29 +8,29 @@ namespace PhotoSharingApp.Data.Models
 {
     public class Photo
     {
-        //PhotoID. This is the primary key
+        //primary key
         public int PhotoID { get; set; }
 
-        //Title. The title of the photo
+        //titulo foto
         public string Title { get; set; }
 
-        //Description.
+        //Descripcion
         public string Description { get; set; }
 
         //CreatedDate
         public DateTime CreatedDate { get; set; }
 
-        //Date when the photo was taken
+        //fecha de toma
         public DateTime PhotoDate { get; set; }
 
-        //UserName. This is the name of the user who created the photo
+        //quien realizo la foto
         public string UserName { get; set; }
-
+        //tipo de foto
         public int PhotoTypeID { get; set; }
-
+        //id del tipo de foto
         public int? PhotoFileID { get; set; }
 
-        //All the comments on this photo, as a navigation property
+        //Todos los comentarios de esta foto, como propiedad de navegación
         public virtual ICollection<Comment> Comments { get; set; }
         public virtual PhotoType Type { get; set; }
         public virtual PhotoFile File { get; set; }

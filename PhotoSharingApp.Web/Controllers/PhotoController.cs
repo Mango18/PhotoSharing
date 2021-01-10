@@ -9,21 +9,36 @@ using System.Web.Mvc;
 
 namespace PhotoSharingApp.Web.Controllers
 {
+
+
+    /// <summary>
+    /// [ValueReporter] parece ser un data anotetion de fabricacion casera ya que 
+    /// hereda de la clase "ActionFilterAttribute" posicionar el raton encima.(EXPLICAR MEJOR)
+    /// -------
+    /// [RoutePrefix("Photo")]= es una clase y su nombre lo define bien es un prefijo 
+    /// dela ruta
+    /// </summary>
     [ValueReporter]
     [RoutePrefix("Photo")]
+    // photocontroller herede de la clase controller
     public class PhotoController : Controller
     {
+        //tipo de acceso private photoApi hereda de la clase "PhotoSharingAPI" y solofunciona en esta clase
         private PhotoSharingAPI photoAPI;
 
+        //metodo o constructor que crea un nuevo objeto "PhotoSharingAPI"
         public PhotoController()
         {
             photoAPI = new PhotoSharingAPI();
         }
 
+        //metodo
         public ActionResult Index()
         {
+            //la variable photos pilla de la clase photoAPI el metodo GetAllPhotos y hace una 
+            //expresion lambda y utiliza el metodo tolist
             var photos = photoAPI.GetAllPhotos().Select(m => m.ToIndexViewModel()).ToList();
-
+            //metodo view devuelve un objeto, en este caso el objeto photos
             return View(photos);
         }
 

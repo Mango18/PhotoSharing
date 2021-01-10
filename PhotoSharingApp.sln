@@ -1,23 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoSharingApp.Data", "PhotoSharingApp.Data\PhotoSharingApp.Data.csproj", "{24675691-0CC4-4D0A-989A-CA47D4A5C339}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoSharingApp.Web", "PhotoSharingApp.Web\PhotoSharingApp.Web.csproj", "{5716C7EE-6D40-40F3-9071-9AE5450899D2}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://tfs.itteria.cat/tfs/common
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = PhotoSharingApp.Data\\PhotoSharingApp.Data.csproj
-		SccProjectName1 = PhotoSharingApp.Data
-		SccLocalPath1 = PhotoSharingApp.Data
-		SccProjectUniqueName2 = PhotoSharingApp.Web\\PhotoSharingApp.Web.csproj
-		SccProjectName2 = PhotoSharingApp.Web
-		SccLocalPath2 = PhotoSharingApp.Web
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -34,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3C97ED6-7B2B-4DAC-8E79-A0B464C7E095}
 	EndGlobalSection
 EndGlobal
